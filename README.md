@@ -1,1 +1,1 @@
-# lottery-chain
+# Lottery with Eth EVM
