@@ -21,6 +21,8 @@ const input = {
         },
     },
 };
-const output = JSON.parse(solc.compile(JSON.stringify(input)));
-
+let compiled = solc.compile(JSON.stringify(input));
+const output = JSON.parse(compiled);
+console.info("Output finish");
+console.info("Contracts:", output.contracts);
 module.exports = output.contracts["Lottery.sol"].Lottery;
